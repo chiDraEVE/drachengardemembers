@@ -1,0 +1,21 @@
+body {
+    background-color: #444444;
+    color: #CCCCCC;
+}
+
+.memberlist {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    margin: auto;
+}
+
+.member {
+    padding: 10px;
+    border: #CCCCCC 1px solid;
+    margin: 10px;
+}
+
+img {
+
+}

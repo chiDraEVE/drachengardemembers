@@ -1,0 +1,23 @@
+@import scala.collection.mutable.ListBuffer
+@(members: ListBuffer[Member])
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Mitglieder der Drachengarde</title>
+        <link rel="stylesheet" type="text/css" href="@routes.Assets.versioned("stylesheets/drachengarde.css")">
+    </head>
+    <body>
+        <div class="memberlist">
+            @for(member <- members) {
+                <div class="member">
+                    <img src="@member.avatar"/>
+                    <h3>@member.name</h3>
+                    <p>
+                        <img src="@member.rankIcon"/><span id="rank">@member.rank</span>
+                    </p>
+                </div>
+            }
+        </div>
+    </body>
+</html>
